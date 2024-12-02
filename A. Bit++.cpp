@@ -7,22 +7,20 @@ using namespace std;
 #define ff first
 #define ss second
 
-
-
 int main() {
+    int T;
+    cin >> T;
+    int x = 0;
     string str;
-    cin>>str;
-
-    for(auto& digit:str){
-        if(digit > '4'){
-            digit = '9' - digit + '0';
+    while(T--){
+        cin>>str;
+        if(str[1] == '+'){
+            ++x;
+        }
+        else{
+            x--;
         }
     }
-
-    if(str.front() == '0'){
-        str.front() = '9';
-    }
-
-    cout<<str<<endl;
+    cout<<x<<endl;
     return 0;
 }
