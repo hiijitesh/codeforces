@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-#include "debugging.h"
 
 using ll = long long;
 using ld = long double;
@@ -10,6 +9,21 @@ using namespace std;
 #define ss second
 
 void solve(){
+
+    int x;
+    cin>>x;
+
+    int n = to_string(x).size();
+    ll sum = (n*(n+1))/2;
+    // cout<<"SUM: "<<sum<<" "<<"SIZE: "<<n<<" ";
+
+    int currNum = x % 10;
+    // cout<<"currNum: "<<currNum<<endl;
+
+   int ans = (currNum - 1) *10 + sum;
+    cout<<ans<<endl;
+
+
 
 }
 
