@@ -1,25 +1,25 @@
 #include<bits/stdc++.h>
-#include "debugging.h"
 
 using ll = long long;
 using ld = long double;
 using namespace std;
-
 #define endl "\n";
 #define ff first
 #define ss second
 
-void solve(){
-
-}
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
     int T;
     cin >> T;
+    int sum = 0;
+    int ans = INT_MIN;
     while(T--){
-        solve();
+        int a, b;
+        cin>>a>>b;
+        sum += (b-a);
+        ans = max(ans, sum);
     }
+
+    cout<<ans<<endl;
     return 0;
 }

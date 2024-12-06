@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include "debugging.h"
+
 
 using ll = long long;
 using ld = long double;
@@ -10,7 +10,21 @@ using namespace std;
 #define ss second
 
 void solve(){
+    int a, b, n;
+    cin>>a>>b>>n;
 
+    int cnt = 0;
+    // cout<<a<<b<<endl;
+    while(a <= n && b <= n){
+        if(a<=b){
+            a += b;
+        }
+        else{
+            b += a;
+        }
+        cnt++;
+    }
+    cout<<cnt<<endl;
 }
 
 int main() {
